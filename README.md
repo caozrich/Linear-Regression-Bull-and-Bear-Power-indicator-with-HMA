@@ -19,8 +19,11 @@ BBP is based on the Bull and Bear Power indicator, therefore it's a good indicat
 # import the package
 from Linear_regresion_BBP import makeBBP #this function returns a pandas series with the indicator values and the raw dataset
 
-df,sl = makeBBP(df,10) #(df,period) 
+df =  pd.read_csv("dataframe.csv")  
+bbp,sl = makeBBP(df,10) #(df,period) 
+print(bbp)
 ```
 
 ## Sample Figure
 
+![Sin título-1](https://user-images.githubusercontent.com/34092193/213946275-ebacfa69-9020-44cf-9afe-0fdf67b9dff9.png)
